@@ -28,7 +28,11 @@
       const month = Dates.getMonth() + 1;
       const year = Dates.getFullYear();
       const today = `${day}/${month}/${year}`;
-      
+
+      window.addEventListener('beforeunload', function (e) {
+        e.preventDefault();
+        e.returnValue = '';
+    });
       alert(message + Massage  + " " + today);
   }
   </script>
