@@ -1039,3 +1039,12 @@ footer>div>.class{
   100% { margin-bottom: 3%; }
 }
 
+.footer {
+  color: #919f9edf;
+  font-size: 1vmax;
+  opacity: 0;
+  animation: opacityes2 1s ease forwards;
+  animation-delay:  5s;
+}
+
+
