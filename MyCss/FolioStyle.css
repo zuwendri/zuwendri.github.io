@@ -10,7 +10,7 @@
                        "side content"
                        "nav content"
                        "footer content";
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 30vw 70vw;
   grid-template-rows: 11vh 0fr 70vh 18.5vh;
 }
 body {
@@ -36,7 +36,7 @@ header {
   color: #ffffff;
   font-family: monospace;
   font-size: 6vw;
-  margin: 10% 5%;
+  margin: 5vh 5%;
   text-shadow: 1vw 1vw 1vmax #f48821;
 }
 .opacities {
@@ -86,7 +86,7 @@ aside {
   flex: 1;
   width: 17vw;
   height: auto;
-  margin: auto 25%;
+  margin: 2vh 5vw;
   box-shadow: 1px 0px 0px 1px #d8f82a;
   border-radius: 100%;
   animation: rotated 1.5s  cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
@@ -157,9 +157,9 @@ nav {
 //Skills Bar  
 // H T M L //
 */
-.Bars {
+ .Bars {
   color: white;
-  border: 0px solid red;
+  border: 0px solid white;
   font-size: 1vmax;
   font-weight: bolder;
 }
@@ -212,9 +212,9 @@ nav {
   display: none;
   left: 0;
   font-size: 1vmax;
-  margin: 115% 15%;
+  margin: 55vh 15vw;
   background-color: black;
-  width: 40%;
+  width: 20em;
   z-index: 1000;
   position: absolute;
   border: 0px solid red;
@@ -285,9 +285,9 @@ nav {
   display: none;
   left: 0;
   font-size: 1vmax;
-  margin: 115% 15%;
+  margin: 55vh 15vw;
   background-color: black;
-  width: 40%;
+  width: 20em;
   z-index: 1000;
   position: absolute;
   border: 0px solid red;
@@ -357,9 +357,9 @@ nav {
   display: none;
   left: 0;
   font-size: 1vmax;
-  margin: 115% 15%;
+  margin: 55vh 15vw;
   background-color: black;
-  width: 40%;
+  width: 20em;
   z-index: 1000;
   position: absolute;
   border: 0px solid red;
@@ -432,9 +432,9 @@ nav {
   display: none;
   left: 0;
   font-size: 1vmax;
-  margin: 115% 15%;
+  margin: 55vh 15vw;
   background-color: black;
-  width: 40%;
+  width: 20em;
   z-index: 1000;
   position: absolute;
   border: 0px solid red;
@@ -504,9 +504,9 @@ nav {
   display: none;
   left: 0;
   font-size: 1vmax;
-  margin: 115% 15%;
+  margin: 53vh 15vw;
   background-color: black;
-  width: 40%;
+  width: 20em;
   z-index: 1000;
   position: absolute;
   border: 0px solid red;
@@ -578,9 +578,9 @@ nav {
   display: none;
   left: 0;
   font-size: 1vmax;
-  margin: 115% 15%;
+  margin: 55vh 15vw;
   background-color: black;
-  width: 40%;
+  width: 20em;
   z-index: 1000;
   position: absolute;
   border: 0px solid red;
@@ -588,9 +588,9 @@ nav {
 .Bars > .WrapMsPText > .MsPText {
   color: white;
 /*  display: none;*/
-  position: sticky;
+  position: absolute;
   background-color: black;
-  top: 0;
+  top: 5%;
   left: 0;
   margin-left: 0%;
   font-weight: bold;
@@ -633,13 +633,13 @@ section {
 }
 
 .aboutMe {
-/*  border: 1px solid rgb( 255,100,250);*/
+ /*border: 1px solid rgb( 255,100,250);*/
   height: 15vmax;
   overflow: scroll;
   margin-top: 3%;
 }
 .aboutMe>h5 {
-  position: absolute;
+  position: relative;
   color: white;
   font-size: 2vmax;
   top: 0;
@@ -656,17 +656,17 @@ section {
 }
 .textAboutWrap {
   position: relative;
-  /*border: 1px solid white;*/
+  /*border: 1px solid black;*/
   width: 90%;
 }
 .text {
-  position: static;
+  position: absolute;
   color: #fff;
   font-family: fantasy;
-  opacity: 0;
+  opacity: 0%;
   font-size: 1vmax;
   justify-content: flex-start;
-  margin-top: 25%;
+  margin-top: 0vh;
   animation: textOpacity 2.9s ease forwards;
   animation-delay: 2.4s;
 }
@@ -734,15 +734,15 @@ section {
   position: relative;
   display: flex;
  /*border: 1px solid green;*/
-  width: 50%;
+  width: 45%;
   height: auto;
   float: right;
   justify-content: flex-start;
   bottom: 100%;
-  margin-right: 3%;
+  margin-right: 5%;
 }
 .CVsText {
-  position: static;
+  position: absolute;
   color: white;
   font-size: 1vmax;
   font-family: monospace;
@@ -750,6 +750,10 @@ section {
   animation: opacityes2 0.5s ease forwards;
   animation-delay: 3s;
 }
+/*
+//Project Picture JavaScript set//
+//Button|Picture//
+*/
 .m6iBaero2 {
   color: white;
    position: absolute;
@@ -774,6 +778,8 @@ section {
    height: auto;
    animation: scales 0.5s ease forwards;
  }
+
+
 
 
 /*
@@ -803,6 +809,7 @@ section {
   animation: leftSetify 1s ease-out forwards, shadowleft 2.5s ease-in forwards;
   animation-delay: 3s, 3.5s;
 }
+/* TAMBAHKAN BORDER BOTTOM YAH! */
 .lineCertify {
   position: absolute;
   top: 15%; 
@@ -814,9 +821,13 @@ section {
   opacity: 1;
   height: 1%;
   animation: lineCerifyLeft 0.5s ease-out forwards, paddinfLine 0.5s ease-in-out
-  forwards, opacityLineCerify 0.5s ease-out forwards, backnormal 0.50s ease-in
-  forwards;
-  animation-delay: 4s, 4.3s, 4.5s, 5s;
+  forwards, opacityLineCerify 0.5s ease-out forwards, backnormal 0.50s ease-in forwards, opacityOut 1s ease forwards;
+  animation-delay: 4s, 4.3s, 4.5s, 5s, 5.2s;
+}
+.borderCertify {
+    border-bottom: 0vmax solid white; 
+    animation: bordermove 0.5s ease-out forwards;
+  animation-delay: 6s;
 }
 .vertikalLine {
   position: absolute;
@@ -851,7 +862,7 @@ section {
 }
 .Num1 {
   margin-left: 3%;
-  transform: translateY(70%);
+  transform: translateY(2em);
 }
 .Num2 {
   margin: 60%;
@@ -860,11 +871,11 @@ section {
 
 .Num3 {
   margin-left: 60%;
-  transform: translateY(10%);
+  transform: translateY(20%);
 }
 .Num4 {
   margin-left: 3%;
-  transform: translateY(300%);
+  transform: translateY(250%);
 }
 
 .CERTIFICATEWrap > .wraptyp {
@@ -953,7 +964,7 @@ section {
    position: relative;
    display: flex;
    left: 0%;
-   top: 0%;
+   bottom: 1vh;
    margin: 0;
    width: 50vw;
    height: 10vh;
@@ -976,29 +987,6 @@ section {
  
  
  
- 
-  
- /*
- //Hover Picture
-.picture:hover {
-   position: fixed;
-  border: 1px solid white;
-  width: 60%;
-  height: 20%;
-  transform: scale(150%) translateX(0%);
-  border-radius: 0%;
-  background-size: 100% 100%;
-  transition: 0.5s ease-out;
-  margin: auto -10%;
-    object-fit: cover;
-
-  animation: boxShadows 0.5s ease-in forwards;
-  animation-delay: 0.4s;
-  z-index: 10;
-}
-*/
-
-
 footer {
   padding: 0%;
   background-color: #1a1d1e;
@@ -1046,5 +1034,8 @@ footer>div>.class{
   animation: opacityes2 1s ease forwards;
   animation-delay:  5s;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> lost_commit

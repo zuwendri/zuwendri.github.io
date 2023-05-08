@@ -332,6 +332,10 @@
     opacity: 1;
   }
 }
+@keyframes opacityOut {
+    0% { opacity: 1;}
+    100% { opacity: 0;}
+}
 @keyframes marginmove {
   0% {
     margin-top: -30%;
