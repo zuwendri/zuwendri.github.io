@@ -635,8 +635,11 @@ section {
 .aboutMe {
  /*border: 1px solid rgb( 255,100,250);*/
   height: 15vmax;
-  overflow-X: hidden;
-  overflow-y: scroll;
+  overflow: scroll;
+  scrollbar-width: none;
+  /* tambahkan vendor prefix untuk browser lama */
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-color: transparent; /* Firefox */    
   margin-top: 3%;
 }
 .aboutMe>h5 {
@@ -682,8 +685,11 @@ section {
 */
 .ProjectWrap{
   position: relative;
-  overflow-X: hidden;
-  overflow-y: scroll;
+  overflow: scroll;
+  scrollbar-width: none;
+  /* tambahkan vendor prefix untuk browser lama */
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-color: transparent; /* Firefox */  
 /*  border: 1px solid green;*/
   height: 20vh;
   margin-top: 3%;
@@ -791,7 +797,7 @@ section {
 */
 .CERTIFICATEWrap {
   overflow-X: hidden;
-  overflow-y: scroll;
+  overflow-y: scroll;  
   display:flex;
   position: relative;
   margin-top: 3%;
