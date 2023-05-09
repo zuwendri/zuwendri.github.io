@@ -635,7 +635,8 @@ section {
 .aboutMe {
  /*border: 1px solid rgb( 255,100,250);*/
   height: 15vmax;
-  overflow: scroll;
+  overflow-X: hidden;
+  overflow-y: scroll;
   margin-top: 3%;
 }
 .aboutMe>h5 {
@@ -681,7 +682,8 @@ section {
 */
 .ProjectWrap{
   position: relative;
-  overflow: scroll;
+  overflow-X: hidden;
+  overflow-y: scroll;
 /*  border: 1px solid green;*/
   height: 20vh;
   margin-top: 3%;
@@ -788,7 +790,8 @@ section {
 //Border background with picture
 */
 .CERTIFICATEWrap {
-  overflow: scroll;
+  overflow-X: hidden;
+  overflow-y: scroll;
   display:flex;
   position: relative;
   margin-top: 3%;
