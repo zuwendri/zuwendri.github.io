@@ -115,7 +115,7 @@ nav {
   font-size: 0vmax;
   border-left: 0vmax solid #f2f929;
   padding-left: 0vmax;
-  margin-top: 7vh;
+  margin-top: 2vh;
   left: 0%;
   opacity: 0;
   animation: sizeFont 1s ease forwards, opacityes 1s ease-out forwards, leftBorder 0.5s ease-out forwards, leftBorderPdding 0.6s ease-out forwards;
@@ -829,11 +829,13 @@ section {
   top: 0;
   font-weight: bold;
   font-family: monospace;
+  border-bottom: 0vmax solid white;
   text-shadow: 0px 0px 0px  black;
-  animation: leftSetify 1s ease-out forwards, shadowleft 2.5s ease-in forwards;
-  animation-delay: 3s, 3.5s;
+  animation: leftSetify 1s ease-out forwards, shadowleft 2.5s ease-in forwards, bordermove 1.5s ease-out
+  forwards;
+  animation-delay: 3s, 3.5s, 5s, 6s;;
 }
-/* TAMBAHKAN BORDER BOTTOM YAH! */
+
 .lineCertify {
   position: absolute;
   top: 15%; 
@@ -844,8 +846,7 @@ section {
   padding-left: 35%;
   opacity: 1;
   height: 1%;
-  animation: lineCerifyLeft 0.5s ease-out forwards, paddinfLine 0.5s ease-in-out
-  forwards, opacityLineCerify 0.5s ease-out forwards, backnormal 0.50s ease-in forwards, opacityOut 1s ease forwards;
+  animation: lineCerifyLeft 0.5s ease-out forwards, paddinfLine 0.5s ease-in-out, forwards, opacityLineCerify 0.5s ease-out forwards, backnormal 0.50s ease-in forwards, opacityOut 1s ease forwards;
   animation-delay: 4s, 4.3s, 4.5s, 5s, 5.2s;
 }
 .borderCertify {
