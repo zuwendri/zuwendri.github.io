@@ -642,6 +642,10 @@ section {
   scrollbar-color: transparent; /* Firefox */    
   margin-top: 3%;
 }
+.aboutMe::-webkit-scrollbar {
+  display: none;
+}
+
 .aboutMe>h5 {
   position: relative;
   color: white;
@@ -694,6 +698,10 @@ section {
   height: 20vh;
   margin-top: 3%;
 }
+.ProjectWrap::-webkit-scrollbar {
+  display: none;
+}
+
 
 .projectCation {
   position: absolute;
@@ -796,14 +804,21 @@ section {
 //Border background with picture
 */
 .CERTIFICATEWrap {
-  overflow-X: hidden;
-  overflow-y: scroll;  
+  overflow: scroll;
+  scrollbar-width: none;
+  /* tambahkan vendor prefix untuk browser lama */
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-color: transparent; /* Firefox */  
+/*  border: 1px solid green;*/ 
   display:flex;
   position: relative;
   margin-top: 3%;
  /* border: 1px solid white;*/
   height: 30%;
   gap: 10;
+}
+.CERTIFICATEWrap::-webkit-scrollbar {
+  display: none;
 }
 
 .Certify {
@@ -1043,8 +1058,4 @@ footer>div>.class{
   animation: opacityes2 1s ease forwards;
   animation-delay:  5s;
 }
-<<<<<<< HEAD
 
-
-=======
->>>>>>> lost_commit
