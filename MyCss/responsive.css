@@ -3,18 +3,33 @@
         grid-template-columns: 25vw;
      }
      .iconPNG {
-         width: 14vw;
+         width: 15vw;
      }
     .count {
         height: 0.3vmax;
     }
     .CERTIFICATEWrap > .picture {
-        height: 12vh;
+        height: 9vh;
     }
     .cvtextWrp {
         margin-right: 5%;
     }
-}
+      @keyframes sizeFont {
+    0% {
+      font-size: 0vmax;
+    }
+    100% {
+      font-size: 1.5vmax;
+    }
+  }
+  .ListShcool > li {
+      font-size: 1vmax;
+  }
+  .ListShcool > Li > p  {
+      font-size: 0.5vmax;
+  }
+ }
+
 
 @media screen and (min-width: 475px){
      .Num4 {

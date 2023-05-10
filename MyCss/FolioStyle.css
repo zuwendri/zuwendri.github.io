@@ -110,12 +110,14 @@ nav {
   grid-area: nav;
   overflow: hidden;
 }
+
 .educations {
+  position: relative;
   color: orange;
   font-size: 0vmax;
   border-left: 0vmax solid #f2f929;
   padding-left: 0vmax;
-  margin-top: 2vh;
+  margin-top: 0vh;
   left: 0%;
   opacity: 0;
   animation: sizeFont 1s ease forwards, opacityes 1s ease-out forwards, leftBorder 0.5s ease-out forwards, leftBorderPdding 0.6s ease-out forwards;
