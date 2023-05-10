@@ -110,6 +110,9 @@ nav {
   grid-area: nav;
   overflow: hidden;
 }
+.Navmove {
+   margin-top: 0vh;
+}
 
 .educations {
   position: relative;
