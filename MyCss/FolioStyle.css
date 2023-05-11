@@ -111,7 +111,7 @@ nav {
   overflow: hidden;
 }
 .Navmove {
-   margin-top: 0vh;
+   margin-top: 2vh;
 }
 
 .educations {
@@ -877,7 +877,7 @@ section {
 .CERTIFICATEWrap > .picture {
   position: absolute;
   border: 1px solid white;
-  width: 0%;
+  width: 0vh;
   height: 35%;
   background-size: 100% 100%;
   background-position: center;
