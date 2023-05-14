@@ -172,11 +172,14 @@ header ul li a:hover {
   position: absolute;
   height: 200px;
   width: 200px;
-  border: solid 30px #1f67db;
+  border: solid 5vmax #1f67db;
   border-radius: 50%;
   opacity: 0.3;
+  transform: rotate(0deg);
   bottom: 250px;
   left: 80px;
+  animation: solid2dotted 2s ease-out alternate-reverse infinite;
+  animation-delay: 2s;
 }
 
 .circle2 {
@@ -185,9 +188,9 @@ header ul li a:hover {
   width: 200px;
   border: dashed 30px #1f67db;
   border-radius: 50%;
-  transform: /*translate(300px, 20px)*/ rotate(0deg);
+  transform: translate(300px, 20px) rotate(0deg);
   opacity: 0.3;
-  animation: rotated 2.5s ease-out forwards infinite;
+  animation: rotated 2.5s ease-in forwards infinite;
 }
 
 .circle3 {
@@ -542,6 +545,7 @@ header ul li a:hover {
     color: #1f67db;
     cursor: pointer;
     transition: 0.5s;
+    margin-right: 15px;
   }
 
   .up {

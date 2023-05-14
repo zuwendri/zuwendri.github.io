@@ -1,4 +1,12 @@
  @keyframes rotated {
-  0%{ transform: rotate(0deg);}
+  0% { transform: rotate(0deg);}
   100% { transform: rotate(360deg);}
+}
+@keyframes solid2dotted {
+  0% {
+    border: solid 5vmax #1f67db;;
+  }
+  100% {
+    border: solid 11px #1f67db;
+  }
 }
