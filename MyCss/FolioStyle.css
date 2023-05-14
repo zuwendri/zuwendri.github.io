@@ -1,1066 +1,773 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');*/
 
-.container{
-  display: grid;
-  border: 1px solid black;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  grid-template-areas: "side header"
-                       "side content"
-                       "nav content"
-                       "footer content";
-  grid-template-columns: 30vw 70vw;
-  grid-template-rows: 11vh 0fr 70vh 18.5vh;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  scroll-behavior: smooth;
 }
+
 body {
-  background-color: #1a1d1e;
-  padding: 0%;
-  margin: 0%;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-/*
-// HEADER //
-//Name Irwan.
-//LineDecoration.
-//Border Left NAME (I).
-//Border Animation from left to right.
-*/
 header {
-  padding: 0%;
-  background-color: #000000;
-  overflow: visible;
-  grid-area: header;
-}
-.NAME {
-  color: #ffffff;
-  font-family: monospace;
-  font-size: 6vw;
-  margin: 5vh 5%;
-  text-shadow: 1vw 1vw 1vmax #f48821;
-}
-.opacities {
-  opacity: 0;
-  animation: opacityes 1s ease forwards;
-  animation-delay: 2s;
-}
-.leftBorder {
-  border-left: 0vmax solid #fff;
-  animation: downLeft 1.5s  cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-  animation-delay: 1s;
-}
-.BlackBord {
-  position: absolute;
-  border: 2vmax solid #000;
-  top: 0;
-  padding-right: 80%;
-  right: 0%;
-  animation: moveRight 1s ease-in-out forwards;
-  animation-delay: 2s;
-}
-.line1 {
-  position: absolute;
-  border: 1vw solid #000;
-  width: 0%;
-  height: 0%;
-  top: 2%;
-  float: left;
-  animation: lineMotion 1.5s  cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-  animation-delay: 2s;
-}
-
-/*
-// ASIDE //
-//My Picture 
-//ShadowBox Picture
-//limitBorder
-*/
-aside {
-  background-color: #1a1d1e;
-  grid-area: side;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-}
-.iconPNG {
-  display: flex;
-  flex: 1;
-  width: 14vw;
-  height: auto;
-  margin: 2vh 5vw;
-  /*box-shadow: 1px 0px 0px 1px #d8f82a;*/
-  border-radius: 1%;
-  animation: rotated 1.5s  cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  animation-delay: 1s;
- 
-}
-.borderImg {
-  position: relative;
+  padding: 0 100px;
+  height: 100px;
   width: 100%;
-  margin: 2%;
-}
-
-/* 
-//NAVBAR//
-//SKILL CONTENT
-//EDUCATION CONTENT//
-*/
-nav {
-  padding-left: 0vmax;
-  background-color: #1a1d1e;
-  grid-area: nav;
-  overflow: hidden;
-}
-.Navmove {
-   margin-top: 2vh;
-}
-
-.educations {
-  position: relative;
-  color: orange;
-  font-size: 0vmax;
-  border-left: 0vmax solid #f2f929;
-  padding-left: 0vmax;
-  margin-top: 0vh;
-  left: 0%;
-  opacity: 0;
-  animation: sizeFont 1s ease forwards, opacityes 1s ease-out forwards, leftBorder 0.5s ease-out forwards, leftBorderPdding 0.6s ease-out forwards;
-  animation-delay: 2s, 2.5s, 3s, 3.9s;
-}
-.ListShcool {
-  display: inline;
-  color: pink;
-  opacity: 0;
-  left: 0vmax;
-  animation: opacityes 0.5s ease-out forwards;
-  animation-delay: 3.9s;
-}
-.ListShcool > li{
-  font-weight: bold;
-  margin-left: 2vmax;
-  top: 0%;
-  font-size: 1.5vmax;
-}
-.ListShcool > Li > p{
-  font-size: 1vmax;
-  border-bottom: 0vh solid transparent;
-  animation: borderSpace 0.5s ease forwards;
-  animation-delay: 5s;
-}
-
-.textSkills {
-  margin-top: 3vh;
-  color: orange;
-  font-size: 0vmax;
-  font-weight: bold;
-  opacity: 0;
-  margin-bottom: 5vh;
-  border-left: 0vmax solid #f2f929;
-  animation: sizeFont 1s ease forwards, opacityes 1s ease-out forwards, leftBorder 0.5s ease-out forwards, leftBorderPdding 0.6s ease-out forwards;
-  animation-delay: 5s, 5.5s, 6s, 6.9s;
-}
-/* 
-//Skills Bar  
-// H T M L //
-*/
- .Bars {
-  color: white;
-  border: 0px solid white;
-  font-size: 1vmax;
-  font-weight: bolder;
-}
-.WrapHtml {
- position: relative;
-  border: 0px solid red;
-  height: 0.7vmax;
-  width: 100%;
-  margin: 0;
-}
-.WrapHtml>.HtmlBar {
-  position: absolute;
-  /*border: 1px solid white transparent*/
-  background-color: white;
-  width: 0%;
-  padding-left: 0%;
-  height: 0.7vmax;
-  top: 0%;
-  opacity: 0;
-  animation: paddingBarSkills 5s  cubic-bezier(.03,1.03,.54,.99) forwards, BarOpacities 1s ease-in-out forwards;
-  animation-delay: 7s, 6s;
-}
-.HtmlBar>span {
-  position: absolute;
-  margin: -0.4em 1em;
-  top: 0%;
-}
-.WrapHtml>p {
-  position: absolute;
+  background-color: #c7adab;
+  position: fixed;
   top: 0;
-  left: 0;
-  color: #f87373;
-  opacity: 0;
-  animation: textBar 1s  cubic-bezier(.03,1.03,.54,.99) forwards, BarOpacities 1s ease-in-out forwards;
-  Animation-delay: 10s, 10.1s;
-}
-.WrapHtml > p > .warn {
-  position: absolute;
-  color: #ffab23;
-  font-size: 1vmax;
-  margin-bottom: 0vmax;
-  bottom: 0vmax;
-  opacity: 0;
-  animation: scalesZ 2s cubic-bezier(.03,1.03,.54,.99) forwards infinite alternate, opacityes2 1s ease forwards;
-  animation-delay: 12.5s, 12s;
+  z-index: 999999999999;
+  transition: 0.3s;
 }
 
-.Bars > .WrapHtmlText{
-  top: 0;
+.dark header {
+  background-color: #2E2E34
+}
+
+header h2 {
+  font-size: 40px;
+  color: #1f67db;
+  text-transform: uppercase;
+}
+
+header ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #1f67db;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 15px;
+  transition: 0.6s ease;
+}
+
+header ul li a:hover {
+  background-color: #1f67db;
+  color: #c7adab;
+}
+
+.menu {
   display: none;
-  left: 0;
-  font-size: 1vmax;
-  margin: 55vh 15vw;
-  background-color: black;
-  width: 20em;
-  z-index: 1000;
-  position: absolute;
-  border: 0px solid red;
 }
-.Bars > .WrapHtmlText > .HtmlText {
+
+.up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 30px;
+  background-color: #1f67db;
   color: white;
-/*  display: none;*/
-  position: sticky;
-  background-color: black;
-  top: 0;
-  left: 0;
-  margin-left: 0%;
-  font-weight: bold;
-}
-
-
-/*
-//Skill Bar
-// C S S //
-*/
-
-.WrapCss {
-  position: relative;
-  border: 0px solid green;
-  height: 0.7vmax;
-  width: 100%;
-  margin: 0;
-  top: 3em;
-}
-.WrapCss>.CssBar {
-  position: absolute;
-  /*border: 1px solid white transparent*/
-  background-color: white;
-  width: 0%;
-  padding-left: 0%;
-  height: 0.7vmax;
-  top: 0%;
-  opacity: 0;
-  animation: paddingBarSkills2 6s cubic-bezier(.03,1.03,.54,.99) forwards, BarOpacities 1s ease-in-out forwards;
-  animation-delay: 6s, 5s;
-}
-.CssBar>span {
-  position: absolute;
-  margin: -0.4em 1em;
-  top: 0%;
-}
-.WrapCss>p {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #f87373;
-  opacity: 0;
-  animation: textBar 1s  cubic-bezier(.03,1.03,.54,.99) forwards, BarOpacities 1s ease-in-out forwards;
-  Animation-delay: 8.5s, 9s;
-}
-.WrapCss >  p > .warn {
-  position: absolute;
-  color: #ffab23;
-  font-size: 1vmax;
-  margin-bottom: 0vmax;
-  bottom: 0vmax;
-  opacity: 0;
-  animation: scalesZ 2s cubic-bezier(.03,1.03,.54,.99) forwards infinite alternate, opacityes2 1s ease forwards;
-  animation-delay: 10.5s, 10s;
-}
-.Bars > .WrapCssZ {
-  top: 0;
-  display: none;
-  left: 0;
-  font-size: 1vmax;
-  margin: 55vh 15vw;
-  background-color: black;
-  width: 20em;
-  z-index: 1000;
-  position: absolute;
-  border: 0px solid red;
-}
-.Bars > .WrapCssZ > .CssText {
-  color: white;
-/*  display: none;*/
-  position: sticky;
-  background-color: black;
-  top: 0;
-  left: 0;
-  margin-left: 0%;
-  font-weight: bold;
-}
-
-/*
-//Skill Bar
-//JAVA SCRIPT//
-*/
-.WrapJs {
-  position: relative;
-  border: 0px solid green;
-  height: 0.7vmax;
-  width: 100%;
-  margin: 0;
-  top: 6em;
-}
-.WrapJs>.JsBar {
-  position: absolute;
-  /*border: 1px solid white transparent*/
-  background-color: white;
-  width: 0%;
-  padding-left: 0%;
-  height: 0.7vmax;
-  top: 0%;
-  opacity: 0;
-  animation: paddingBarSkills3 7s  cubic-bezier(.03,1.03,.54,.99) forwards, BarOpacities 1s ease-in-out forwards;
-  animation-delay: 6s, 6s;
-}
-.JsBar>span {
-  position: absolute;
-  margin: -0.4em 1em;
-  top: 0%;
-}
-.WrapJs>p {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #f87373;
-  opacity: 0;
-  animation: textBar 1s ease-in-out forwards, BarOpacities 1s ease-in-out forwards;
-  Animation-delay: 10s, 10.2s;
-}
-.WrapJs > p > .warn {
-  position: absolute;
-  color: #ffab23;
-  font-size: 1vmax;
-  margin-bottom: 0vmax;
-  bottom: 0vmax;
-  opacity: 0;
-  animation: scalesZ 2s cubic-bezier(.03,1.03,.54,.99) forwards infinite alternate, opacityes2 1s ease forwards;
-  animation-delay: 12.6s, 12.1s;
-}
-/* SKILL EXPLAINING */
-.Bars > .WrapJavaSText{
-  top: 0;
-  display: none;
-  left: 0;
-  font-size: 1vmax;
-  margin: 55vh 15vw;
-  background-color: black;
-  width: 20em;
-  z-index: 1000;
-  position: absolute;
-  border: 0px solid red;
-}
-.Bars > .WrapJavaSText > .JSText {
-  color: white;
-/*  display: none;*/
-  position: sticky;
-  background-color: black;
-  top: 0;
-  left: 0;
-  margin-left: 0%;
-  font-weight: bold;
-}
-
-
-
-/*
-//Skill Bar
-// Microsoft Word //
-*/
-.WrapWord {
-  position: relative;
-  border: 0px solid green;
-  height: 0.7vmax;
-  width: 100%;
-  margin: 0;
-  top: 9em;
-}
-.WrapWord>.WordBar {
-  position: absolute;
-  /*border: 1px solid white transparent*/
-  background-color: white;
-  width: 0%;
-  padding-left: 0%;
-  height: 0.7vmax;
-  top: 0%;
-  opacity: 0; 
-  animation: paddingBarSkills4 6s  cubic-bezier(.03,1.03,.54,.99) forwards, BarOpacities 1s ease-in-out forwards;
-  animation-delay: 6s, 5s;
-}
-.WordBar>span {
-  position: absolute;
-  margin: -0.4em 1em;
-  top: 0%;
-}
-.WrapWord>p {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #f87373;
-  opacity: 0;
-  animation: textBar 1s ease-in-out forwards, BarOpacities 1s ease-in-out forwards;
-  Animation-delay: 8s, 8.3s;
-}
-.WrapWord >  p > .warn {
-  position: absolute;
-  color: #ffab23;
-  font-size: 1vmax;
-  margin-bottom: 0vmax;
-  bottom: 0vmax;
-  opacity: 0;
-  animation: scalesZ 2s cubic-bezier(.03,1.03,.54,.99) forwards infinite alternate, opacityes2 1s ease forwards;
-  animation-delay: 9.5s, 9s;
-}
-
-/* SKILL EXPLAINING */
-.Bars > .WrapMsWText{
-  top: 0;
-  display: none;
-  left: 0;
-  font-size: 1vmax;
-  margin: 55vh 15vw;
-  background-color: black;
-  width: 20em;
-  z-index: 1000;
-  position: absolute;
-  border: 0px solid red;
-}
-.Bars > .WrapMsWText > .WordText {
-  color: white;
-/*  display: none;*/
-  position: sticky;
-  background-color: black;
-  top: 0;
-  left: 0;
-  margin-left: 0%;
-  font-weight: bold;
-}
-
-/*
-//Skill Bar
-// Microsoft Exel //
-*/
-.WrapExcel {
-  position: relative;
-  border: 0px solid green;
-  height: 0.7vmax;
-  width: 100%;
-  margin: 0;
-  top: 12em;
-}
-.WrapExcel>.ExcelBar {
-  position: absolute;
-  /*border: 1px solid white transparent*/
-  background-color: white;
-  width: 0%;
-  padding-left: 0%;
-  height: 0.7vmax;
-  top: 0%;
-  opacity: 0;
-  animation: paddingBarSkills5 6s  cubic-bezier(.03,1.03,.54,.99) forwards, BarOpacities 1s ease-in-out forwards;
-  animation-delay: 7s, 6.5s;
-}
-.ExcelBar>span {
-  position: absolute;
-  margin: -0.4em 1em;
-  top: 0%;
-}
-.WrapExcel>p {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #f87373;
-  opacity: 0;
-  animation: textBar 1s ease-in-out forwards, BarOpacities 1s ease-in-out forwards;
-  Animation-delay: 8s, 8.2s;
-}
-.WrapExcel >  p > .warn {
-  position: absolute;
-  color: #ffab23;
-  font-size: 1vmax;
-  margin-bottom: 0vmax;
-  bottom: 0vmax;
-  opacity: 0;
-  animation: scalesZ 2s cubic-bezier(.03,1.03,.54,.99) forwards infinite alternate, opacityes2 1s ease forwards;
-  animation-delay: 10.5s, 10s;
-}
-/* SKILL EXPLAINING */
-.Bars > .WrapExcelText{
-  top: 0;
-  display: none;
-  left: 0;
-  font-size: 1vmax;
-  margin: 53vh 15vw;
-  background-color: black;
-  width: 20em;
-  z-index: 1000;
-  position: absolute;
-  border: 0px solid red;
-}
-.Bars > .WrapExcelSText > .ExcelText {
-  color: white;
-/*  display: none;*/
-  position: sticky;
-  background-color: black;
-  top: 0;
-  left: 0;
-  margin-left: 0%;
-  font-weight: bold;
-}
-
-
-/*
-//Skill Bar
-// Microsoft Power Point//
-*/
-.WrapPoint {
-  position: relative;
-  border: 0px solid green;
-  height: 0.7vmax;
-  width: 100%;
-  margin: 0;
-  top: 15em;
-}
-.WrapPoint>.PowerPointBar {
-  position: absolute;
-  /*border: 1px solid white transparent*/
-  background-color: white;
-  width: 0%;
-  padding-left: 0%;
-  height: 0.7vmax;
-  top: 0%;
-  opacity: 0;
-  animation: paddingBarSkills6 6s  cubic-bezier(.03,1.03,.54,.99)forwards, BarOpacities 1s ease-in-out forwards;
-  animation-delay: 7s, 6s;
-}
-.PowerPointBar>span {
-  position: absolute;
-  margin: -0.4em 1em;
-  top: 0%;
-}
-.WrapPoint>p {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #f87373;
-  opacity: 0;
-  animation: textBar 1s ease-in-out forwards, BarOpacities 1s ease-in-out forwards;
-  Animation-delay: 9s, 9.5s;
-}
-.WrapPoint >  p > .warn {
-  position: absolute;
-  color: #ffab23;
-  font-size: 1vmax;
-  margin-bottom: 0vmax;
-  bottom: 0vmax;
-  opacity: 0;
-  animation: scalesZ 2s cubic-bezier(.03,1.03,.54,.99) forwards infinite alternate, opacityes2 1s ease forwards;
-  animation-delay: 11.5s, 11s;
-}
-
-/* SKILL EXPLAINING */
-.Bars > .WrapMsPText{
-  top: 0;
-  display: none;
-  left: 0;
-  font-size: 1vmax;
-  margin: 55vh 15vw;
-  background-color: black;
-  width: 20em;
-  z-index: 1000;
-  position: absolute;
-  border: 0px solid red;
-}
-.Bars > .WrapMsPText > .MsPText {
-  color: white;
-/*  display: none;*/
-  position: absolute;
-  background-color: black;
-  top: 5%;
-  left: 0;
-  margin-left: 0%;
-  font-weight: bold;
-}
-.m6iBaerO {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
   display: block;
-  color: white;
-  float: right;
-  margin: 2vmax 2em;
-  /* position: absolute;*/
- /*  border-radius: 100%;*/
-   filter: none;
-   font-weight: bolder;
-   font-size: 2vmax;
-  /* bottom: 7vh;*/
-  /* left: 7vw;*/
-   z-index: 10001;
-   text-shadow: 0vw 0.50vw 0.50vmax #54cade;
+  z-index: 999999;
 }
 
-
-
-
-
-
-
-
-
-
-/*
-// SECTION | CONTENT //
-//Text about Me 
-//Certificate
-//Education
-*/
-section {
-  margin: 0;
-  background: #000000;
-  grid-area: content;
-}
-
-.aboutMe {
- /*border: 1px solid rgb( 255,100,250);*/
-  height: 15vmax;
-  overflow: scroll;
-  scrollbar-width: none;
-  /* tambahkan vendor prefix untuk browser lama */
-  -ms-overflow-style: none; /* IE 10+ */
-  scrollbar-color: transparent; /* Firefox */    
-  margin-top: 3%;
-}
-.aboutMe::-webkit-scrollbar {
-  display: none;
-}
-
-.aboutMe>h5 {
-  position: relative;
-  color: white;
-  font-size: 2vmax;
-  top: 0;
-  left: -50%;
-  animation: left2Right 1s ease-in-out forwards;
-  animation-delay: 1s;
- 
-}
-.aboutMe>h5>.borderBottom {
-  border-bottom: 0vmax solid white;
-  animation: left2Right2 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)
-  forwards;
-  animation-delay: 2s;
-}
-.textAboutWrap {
-  position: relative;
-  /*border: 1px solid black;*/
-  width: 90%;
-}
-.text {
-  position: absolute;
-  color: #fff;
-  font-family: fantasy;
-  opacity: 0%;
-  font-size: 1vmax;
-  justify-content: flex-start;
-  margin-top: 0vh;
-  animation: textOpacity 2.9s ease forwards;
-  animation-delay: 2.4s;
-}
-.rightLine {
-  position: relative;
-}
-
-/*
-//PROJECTCONTENT//
-//my Project
-//CV Project//
-*/
-.ProjectWrap{
-  position: relative;
-  overflow: scroll;
-  scrollbar-width: none;
-  /* tambahkan vendor prefix untuk browser lama */
-  -ms-overflow-style: none; /* IE 10+ */
-  scrollbar-color: transparent; /* Firefox */  
-/*  border: 1px solid green;*/
-  height: 20vh;
-  margin-top: 3%;
-}
-.ProjectWrap::-webkit-scrollbar {
-  display: none;
-}
-
-
-.projectCation {
-  position: absolute;
-  font-size: 2vmax;
-  margin-top: -30%;
-  color: white;
-  top: 0;
-  left: 0;
-  border-bottom: 0vmax solid white;
-  text-shadow: 0.2vmax 0.2vmax 1vmax red;
-  animation: marginmove 1s ease-in-out forwards, bordermove 1.5s ease-out
-  forwards;
-  animation-delay: 2s, 3s;
-}
-.horisonLine{
-  position: absolute;
-  border: 1vw solid #9ed9e3;
-  width: 3%;
-  right: 0%;
-  top: 0%;
-  margin-top: 4vh;
-  padding-right: 0%;
-  opacity: 0;
-  animation: lineRight 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)
-  forwards;
-  animation-delay: 0.9s;
-}
-.myCv {
-  position: relative;
-  margin-top: 8vh;
-  /*border: 1px solid white;*/
-  width: 30vw;
-  height: 0vh;
-  top: 0;
-  margin-left: 2%;
-  left: 0;
-  opacity: 0;
-  animation: myCvMotion 1s ease-out forwards, opacityes2 0.9 ease-in forwards;
-  animation-delay: 2s, 2s;
-}
-.CVs {
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-.cvtextWrp {
-  position: relative;
+#home {
+  margin-top: 100px;
   display: flex;
- /*border: 1px solid green;*/
-  width: 45%;
-  height: auto;
-  float: right;
-  justify-content: flex-start;
-  bottom: 100%;
-  margin-right: 5%;
-}
-.CVsText {
-  position: absolute;
-  color: white;
-  font-size: 1vmax;
-  font-family: monospace;
-  opacity: 0;
-  animation: opacityes2 0.5s ease forwards;
-  animation-delay: 3s;
-}
-/*
-//Project Picture JavaScript set//
-//Button|Picture//
-*/
-.m6iBaero2 {
-  color: white;
-   position: absolute;
-   border-radius: 100%;
-   filter: none;
-   font-weight: bolder;
-   font-size: 2vmax;
-   bottom: 7vh;
-   left: 70vw;
-   z-index: 1000;
-   text-shadow: 1vw 0.80vw 1vmax #54cade;
-}
-.Projectimg {
-   display: none;
-   position: absolute;
-   filter: none;
-   top: 0;
-   z-index: 109;
-   transform: scale(0%);
-   margin: 40% -8%;
-   width: 55%;
-   height: auto;
-   animation: scales 0.5s ease forwards;
- }
-
-
-
-
-/*
-//My Certificate//
-//right line horisontal
-//Border background with picture
-*/
-.CERTIFICATEWrap {
-  overflow: scroll;
-  scrollbar-width: none;
-  /* tambahkan vendor prefix untuk browser lama */
-  -ms-overflow-style: none; /* IE 10+ */
-  scrollbar-color: transparent; /* Firefox */  
-/*  border: 1px solid green;*/ 
-  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 95vh;
+  width: calc(100% - 100px);
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  margin-top: 3%;
- /* border: 1px solid white;*/
-  height: 30%;
-  gap: 10;
-}
-.CERTIFICATEWrap::-webkit-scrollbar {
-  display: none;
 }
 
-.Certify {
-  position: absolute;
-  font-size: 2vmax;
+.dark {
+  background-color: #1F2021;
   color: #fff;
-  left: -40%;
-  top: 0;
-  font-weight: bold;
-  font-family: monospace;
-  border-bottom: 0vmax solid white;
-  text-shadow: 0px 0px 0px  black;
-  animation: leftSetify 1s ease-out forwards, shadowleft 2.5s ease-in forwards, bordermove 1.5s ease-out
-  forwards;
-  animation-delay: 3s, 3.5s, 5s, 6s;;
+  transition: 0.3s;
 }
 
-.lineCertify {
-  position: absolute;
-  top: 15%; 
-  margin-top: 2%;
-  right: 101%;
-  border: 1vw solid #fff;
-  background-color: #fff;
-  padding-left: 35%;
-  opacity: 1;
-  height: 1%;
-  animation: lineCerifyLeft 0.5s ease-out forwards, paddinfLine 0.5s ease-in-out, forwards, opacityLineCerify 0.5s ease-out forwards, backnormal 0.50s ease-in forwards, opacityOut 1s ease forwards;
-  animation-delay: 4s, 4.3s, 4.5s, 5s, 5.2s;
-}
-.borderCertify {
-    border-bottom: 0vmax solid white; 
-    animation: bordermove 0.5s ease-out forwards;
-  animation-delay: 6s;
-}
-.vertikalLine {
-  position: absolute;
-  border: 0.3vh solid #9ed9e3;
-  border-top: transparent;
-  /*border-top-left-radius: 100%;
-  border-top-right-radius: 100%;*/
-  right: 50%;
-  margin-top: 10%;
-  width: 0%;
-  opacity: 0;
-  height: 0vh;
-  animation: verticalDown 1.5s ease-in forwards;
-  animation-delay: 2.1s;
-  
-}
-.CERTIFICATEWrap > .picture {
-  position: absolute;
-  border: 1px solid white;
-  width: 0vh;
-  height: 35%;
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 5%;
-  transition: 0.5s cubic-bezier(.268, 2.55, 0.10, .55);
-  box-shadow: none;
-  margin-top: 15%;
-  opacity: 0;
-  animation: heightFicate 0.9s ease-in forwards, opacityes2 0.9s ease-in forwards;
-  animation-delay: 3s, 3.5s;
-}
-.Num1 {
-  margin-left: 3%;
-  transform: translateY(2em);
-}
-.Num2 {
-  margin: 60%;
-  top: 70%;
+.right {
+  transform: translateY(-200px)
 }
 
-.Num3 {
-  margin-left: 60%;
-  transform: translateY(20%);
-}
-.Num4 {
-  margin-left: 3%;
-  transform: translateY(250%);
+.right img {
+  width: 450px;
 }
 
-.CERTIFICATEWrap > .wraptyp {
+.left {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-200px)
+}
+
+.left span {
+  font-size: 30px;
+}
+
+.left h3 {
+  font-size: 50px;
+  color: #1f67db;
+  letter-spacing: 1px;
+}
+
+.left .des {
+  font-size: 25px;
+}
+
+.left button {
+  border: none;
+  outline: none;
+  background-color: #1f67db;
+  width: 150px;
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.left button a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.left button:hover {
+  transform: scale(1.09);
+  background-color: #c7adab;
+}
+
+.left button:hover a {
+  color: #1f67db
+}
+
+.bgtitle {
+  position: absolute;
+  transform: rotate(-90deg) translateY(300px) translateX(-250px);
+  z-index: -2;
+  right: 0;
+  font-size: 150px;
+  color: #1f67db;
+  opacity: 0.3
+}
+
+.htmls {
+  position: absolute;
+  font-size: 100px;
+  right: 60px;
+  top: 200px;
+  color: #1f67db;
+  opacity: .3;
+  z-index: -10;
+}
+
+.circle1 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border: solid 30px #1f67db;
+  border-radius: 50%;
+  opacity: 0.3;
+  bottom: 250px;
+  left: 80px;
+}
+
+.circle2 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border: dashed 30px #1f67db;
+  border-radius: 50%;
+  transform: /*translate(300px, 20px)*/ rotate(0deg);
+  opacity: 0.3;
+  animation: rotated 2.5s ease-out forwards infinite;
+}
+
+.circle3 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border: solid 30px #1f67db;
+  opacity: 0.3;
+  border-radius: 50%;
+  top: 150px;
+  left: 80px;
+}
+
+#services {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: coral;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #1f67db;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c7adab;
+  box-shadow: 5px 5px 10px #3D474B;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.5s;
   position: relative;
-  border: 0px solid white;
-  width: 50vw;
+  overflow: hidden;
+  height: 170px;
+}
+
+
+.bgcard {
+  background-color: lightgray;
+  z-index: 100000;
   top: 0;
   bottom: 0;
-  margin-top: 50vh;
-}
-
-
-.wraptyp > .typ-verify {
-  position: absolute;
-  border-top: 1vw solid white;
-  color: white;
-  top: 0;
-  left: 5%;
-  font-size: 1.5vmax;
-  opacity: 0;
-  animation: opacityes2 1s ease forwards;
-  animation-delay: 3s;
-}
-
-
-
- 
- /*
- //image JavaScript set 
- */
- .allShow {
-   display: none;
-   position: absolute;
-   filter: none;
-   top: 0;
-   transform: scale(0%);
-   margin: 100% -15%;
-   width: 70%;
-   height: 20%;
-   animation: scales 0.5s ease forwards;
- }
- .m6iBaero {
-   color: white;
-   position: absolute;
-   border-radius: 100%;
-   filter: none;
-   font-weight: bolder;
-   font-size: 2vmax;
-   margin-left: 40%;
-   z-index: 1000;
-     text-shadow: 1vw 0.80vw 1vmax #54cade;
- }
- 
- .WrapJob {
-   position: relative;
-   border: 0px solid white;
-   overflow: hidden;
-   height: 5vh;
- }
- 
- .experience{
-  position: absolute;
-  color: white;
-  font-size: 2vmax;
-  top: 0%;
-  left: -500%;
-  animation: left2Right 1s ease-in-out forwards;
-  animation-delay: 2s;
- }
- .experience>span {
-   border-bottom: 0vmax solid white;
-  animation: left2Right2 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)
-  forwards;
-  animation-delay: 3s;
- }
- .Far-Z > p{
-   color: white;
-   font-size: 1.7vmax;
-   font-weight: bolder;
-   margin-left: 3%;
-   opacity: 0;
-   animation: opacityes2 1s steps(60, end) forwards;
-   animation-delay: 3s;
- }
- .Far-Z > ul {
-   position: relative;
-   display: flex;
-   left: 0%;
-   bottom: 1vh;
-   margin: 0;
-   width: 50vw;
-   height: 10vh;
-   border: 0px solid white;
-   align-content: flex-start;
-   justify-content: center;
-   flex-direction: column;
- }
- .Far-Z > ul > li {
-   color: white;
-   font-size: 1.5vmax;
-   top: 0;
-   opacity: 0;
-   animation: opacityes2 1s ease-in-out forwards;
-   animation-delay: 5s;
- }
-.Far-Z > ul > p {
-  font-size: 2vmax; 
-}
- 
- 
- 
-footer {
-  padding: 0%;
-  background-color: #1a1d1e;
-  grid-area: footer;
-}
-footer>h2 {
-  color: orange;
-  font-size: 0vmax;
-  border-left: 0vmax solid #f2f929;
-  padding-left: 0vmax;
-  left: 0%;
-  opacity: 0;
-  animation: sizeFont 1s ease forwards, opacityes 1s ease-out forwards, leftBorder 0.5s ease-out forwards, leftBorderPdding 0.6s ease-out forwards;
-  animation-delay: 3s, 3.5s, 4s, 4.9s;
-}
-
-footer>div {
-  display: flex;
-  color: #fff;
-  font-size: 1vmax;
-  flex-direction: column;
-  opacity: 0;
-  animation: textOpacity 1s ease forwards;
-  animation-delay: 4s;
-}
-footer>div>.class{
-  color: inherit;
-  top: 0;
+  right: 0;
   left: 0;
-  margin-bottom: 0%;
-  font-weight: bold;
-  animation: bottoms 2s cubic-bezier(.03,1.03,.54,.99) forwards;
-  animation-delay: 5.5s;
-}
-@keyframes bottoms {
-  0% { margin-bottom: 0%; }
-  50% { margin-bottom: 5%; }
-  100% { margin-bottom: 3%; }
+  opacity: .8;
+  position: absolute;
+  transition: 0.5s;
 }
 
-.footer {
-  color: #919f9edf;
-  font-size: 1vmax;
+.card:hover {
+  transform: scale(1.08);
+  height: 240px;
+}
+
+.card:hover .bgcard {
   opacity: 0;
-  animation: opacityes2 1s ease forwards;
-  animation-delay:  5s;
 }
 
+.card ion-icon {
+  font-size: 65px;
+  margin-bottom: 10px;
+  position: absolute;
+  z-index: 10000000;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+.html {
+  color: #ED6915;
+}
+
+.css {
+  color: #4269F5;
+}
+
+.js {
+  color: #D5D649;
+}
+
+.card:hover ion-icon {
+  position: static;
+  transform: translateY(0);
+}
+
+.card h3 {
+  color: #1f67db;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+#skills {
+  width: 100%;
+  padding: 200px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.content {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.skills {
+  background-color: #c7adab;
+  padding: 20px;
+  padding-top: 0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #3D474B;
+}
+
+.para {
+  margin-left: 50px;
+}
+
+.para h3 {
+  color: #1f67db;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.skill {
+  margin-top: 20px;
+  position: relative;
+}
+
+.skill span {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.htmlbar {
+  color: #ED6915
+}
+
+.cssbar {
+  color: #4269F5
+}
+
+.jsbar {
+  color: #D5D649;
+}
+
+.bar {
+  background-color: #fff;
+  width: 400px;
+  height: 10px;
+  border-radius: 20px;
+}
+
+.activebar {
+  width: 0px;
+  height: 10px;
+  border-radius: 20px;
+  position: absolute;
+  transform: translateY(-10px);
+  transition: width 0.5s;
+}
+
+.activehtml {
+  width: 350px;
+  background-color: #ED6915;
+}
+
+.activecss {
+  width: 250px;
+  background-color: #4269F5;
+}
+
+.activejs {
+  width: 130px;
+  background-color: #D5D649
+}
+
+.bgskill {
+  transform: rotate(90deg) translateY(40px);
+  left: 0;
+  top: 120px;
+  position: absolute;
+  font-size: 80px;
+  opacity: 0.3;
+  color: #1f67db;
+  z-index: -10;
+}
+
+.circle4 {
+  height: 200px;
+  width: 200px;
+  border: solid 30px #1f67db;
+  opacity: 0.3;
+  border-radius: 50%;
+  top: 80px;
+  right: 100px;
+  position: absolute;
+}
+
+.circle5 {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border: dashed 30px #1f67db;
+  opacity: 0.3;
+  border-radius: 50%;
+  bottom: 40px;
+  left: 160px;
+}
+
+#contact {
+  background-color: coral;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 100px;
+}
+
+#contact .cards .card {
+  height: 170px;
+  width: 200px;
+}
+
+#contact .cards .card ion-icon {
+  position: static;
+  transform: translate(0, 0);
+  color: #1f67db;
+}
+
+#contact cards card:hover {
+  transform: scale(1.08);
+  height: 170px;
+}
+
+.switch {
+  background: #fff;
+  height: 30px;
+  width: 60px;
+  padding: 0 5px;
+  border-radius: 20px;
+  transform: translateY(2.5px);
+  display: flex;
+  align-items: center;
+}
+
+.switchcircle {
+  height: 25px;
+  width: 25px;
+  background-color: #c7adab;
+  border-radius: 50%;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.switchcircle.on {
+  transform: translateX(25px);
+  height: 25px;
+  width: 25px;
+  background-color: #2E2E34;
+  border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+
+  header {
+    padding: 0 20px;
+    height: 60px;
+  }
+
+  header h2 {
+    font-size: 25px;
+  }
+
+  header ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 20px;
+    bottom: 0;
+    width: 200px;
+    padding: 80px 0 420px 30px;
+    background-color: #2d158c;
+    z-index: 9999;
+    transform: translateX(-200px);
+    transition: transform 0.5s;
+    z-index: 99999999999;
+  }
+
+  header ul.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 20px;
+    bottom: 0;
+    width: 200px;
+    padding: 80px 0 420px 30px;
+    background-color: #2d158c;
+    transform: translateX(0px);
+  }
+
+  header ul li {
+    margin: 20px 0;
+  }
+
+  header ul li a {
+    color: white;
+  }
+
+  header ul li a:hover {
+    color: #c7adab;
+    background-color: transparent;
+  }
+
+  .menu {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f67db;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 15px;
+    background-color: #1f67db;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #home {
+    margin-top: 60px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 50px);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-bottom: 150px;
+  }
+
+  .right {
+    transform: translateY(0);
+  }
+
+  .right img {
+    width: 300px;
+    margin-top: 40px;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transform: translateY(0);
+  }
+
+  .left span {
+    font-size: 20px;
+  }
+
+  .left h3 {
+    font-size: 35px;
+    color: #1f67db;
+    letter-spacing: 1px;
+  }
+
+  .left .des {
+    font-size: 20px;
+  }
+
+  .left button {
+    border: none;
+    outline: none;
+    background-color: #1f67db;
+    width: 130px;
+     border-radius: 15px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .left button a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+  }
+
+  .left button:hover {
+    transform: scale(1.09);
+    background-color: #c7adab;
+  }
+
+  .left button:hover a {
+    color: #1f67db
+  }
+
+  .bgtitle {
+    transform: rotate(-90deg) translateY(130px) translateX(-350px);
+    font-size: 60px;
+  }
+
+  .htmls {
+    left: 0;
+    transform: translateY(300px);
+    font-size: 60px;
+  }
+
+  .circle1 {
+    height: 70px;
+    width: 70px;
+    border: solid 10px #1f67db;
+    left: -10px;
+    ;
+    transform: translateY(-45px);
+  }
+
+  .circle2 {
+    height: 70px;
+    width: 70px;
+    border: dashed 10px #1f67db;
+    right: 0;
+    transform: translateY(130px)
+  }
+
+  .circle3 {
+    display: none;
+  }
+
+  #services {
+    padding: 50px 100px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 270px;
+  }
+
+  #skills {
+    padding: 50px 0;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+
+  .skills {
+    padding: 10px;
+    padding-top: 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #3D474B;
+    width: 290px;
+  }
+
+  .para {
+    width: 250px;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  .para h3 {
+    color: #1f67db;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .skill {
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .skill span {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .bar {
+    width: 270px;
+  }
+
+  .activehtml {
+    width: 240px;
+  }
+
+  .activecss {
+    width: 180px;
+  }
+
+  .activejs {
+    width: 100px;
+  }
+
+  .bgskill {
+    font-size: 50px;
+  }
+
+  .circle4 {
+    display: none;
+  }
+
+  .circle5 {
+    height: 70px;
+    width: 70px;
+    border: dashed 10px #1f67db;
+    top: 40px;
+    transform: translateX(100px)
+  }
+
+  #contact {
+    padding: 50px 0;
+  }
+
+  .switch {
+    transform: translateY(0)
+  }
+
+  .switchcircle {
+    background-color: #2d158c;
+    transition: 0.3s;
+  }
+
+  .switchcircle.on {
+    transform: translateX(25px);
+    height: 25px;
+    width: 25px;
+    background-color: #2d158c;
+    border-radius: 50%;
+  }
+
+}

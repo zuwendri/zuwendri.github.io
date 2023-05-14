@@ -1,751 +1,129 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
+
 <head>
-    <meta charset="UTF-8"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1,
-     maximum-scale=1, user-scalable=no"/>
-     <meta name="Description" content="Curriculum Vitae"/>
-
-     <link rel="icon" href="Gambar /iconself.png" type="image/png" class="myStyle"/>
-
-    <link rel="stylesheet" href="MyCss/FolioStyle.css" class="myStyle"/>
-    <link rel="stylesheet" href="MyCss/FolioAnimation.css" class="myStyle"/> 
-    <link rel="stylesheet" href="MyCss/responsive.css" class="myStyle"/> 
-
-
-
-  <script async>
-      let message ="Hormat saya,\nKpd Bpk/Ibu.\n\nMohon maaf atas ketidak nyamanannya, untuk beberapa device website ini mungkin belum responsive. Ada masalah saat melakukan pengembangan. Untuk saat ini saya sedang melakukan perbaikan terhadap masalah ini, sekali lagi mohon maaf atas ketidaknyamanannya.\nTerimakasih";
-      let Massage = "\n\nSalam hangat,\nIrwan Zuwendri."+ '\n\n';
-      
-      //Date
-      const Dates = new Date();
-      const day = Dates.getDate();
-      const month = Dates.getMonth() + 1;
-      const year = Dates.getFullYear();
-      const today = `${day}/${month}/${year}`;
-      window.addEventListener('beforeunload', function (e) {
-        e.preventDefault();
-        e.returnValue = '';
-    });
-      alert(message + Massage  + " " + today);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="myCss/FolioStyle.css">
+  <<link rel="stylesheet" href="animation.css">
   
-  </script> 
-   
-      
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      
+   <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">-->
     
-    <title>PORTOFOLIO</title>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+ <script src="https://kit.fontawesome.com/ec788221a9.js" crossorigin="anonymous"></script>
+   
+  <title>Portfolio</title>
 </head>
+
 <body>
-  <main class="container">
-   <header class="except">
-    <div class="NameWrap" style="position: relative;">
-     <h1 class="NAME"><span class="leftBorder"><span class="opacities">IRWAN
-     ZUWENDRI</span></span></h1>
-     <div class="BlackBord"></div>
+<i class="gg-chevron-up-r up"></i>
+  <header>
+    <h2>My Portfolio</h2>
+    <ul>
+      <li><a href="#home" id="nav1">Home</a></li>
+      <li><a href="#services" id="nav2">Services</a></li>
+      <li><a href="#skills" id="nav3">Skills</a></li>
+      <li><a href="#contact" id="nav4">Contact</a></li>
+      <li>
+        <div class="switch">
+          <div class="switchcircle">
+            <ion-icon name="moo-outline"></ion-icon>
+          </div>
+        </div>
+      </li>
+    </ul>
+<i class="gg-chevron-up-r menu"></i>
+  </header>
+  <section id="home">
+    <div class="left">
+      <span>Hello, I'm Irwan</span>
+      <h3>Web Developer</h3>
+      <span class="des"> I develop web and web design.</span>
+      <button><a href="#skills">View My Skills</a></button>
     </div>
-     <div class="line1"></div>
-   </header>
-   
-   
-   
-   <aside class="except">
-     <div class="borderImg">
-      <img class="iconPNG" src="Gambar/iconself.png" alt="person
-      Icon.png"/>
-     </div>
-   </aside>
-   
-   <nav class="except sides">
-     <article class="Navmove">
-     
-       <h2 class="educations">EDUCATION</h2>
-      
-       <ul class="ListShcool">
-         <li class="smk">SMK Citra Negara
-         <p><u>2020 - 2023</u></p></li>
-         
-         <li class="smp">SMP Pgri Karadenan
-         <p><u>2017 - 2020</u></p></li>
-         
-         <li class="sd">SDN Cibabat Mandiri 3
-         <p><u>2011 - 2017</u></p></li>
-       </ul>
-     </article>
-     
-     <article class="Bars">
-      <h2 class="textSkills">SKILL</h2>
-      
-      <div class="WrapHtml">
-        <p>HTML&nbsp;&nbsp;&nbsp; <span class="fas fa-exclamation warn"></span></p>
-        <div class="HtmlBar count">
-          <span class="percentage">0%</span>
+    <div class="right">
+      <i class="fa-sharp fa-light fa-bars fa-fade"></i>
+     <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_kdikdv8b.json"  background="transparent"  speed="1"  style="width: auto; height: 300px;"  loop  autoplay></lottie-player>
+    </div>
+    <h1 class="bgtitle">Portfolio</h1>
+    <h1 class="htmls">zuwendri</h1>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+  </section>
+  <section id="services">
+    <h1 class="title">Services</h1>
+    <div class="cards">
+      <div class="card">
+        <div class="bgcard"></div>
+        <ion-icon name="logo-html5" class="html"></ion-icon>
+        <h3>Web Development</h3>
+        <p> Develop a website easily and quickly<br> and easily accessible.</p>
+      </div>
+      <div class="card">
+        <div class="bgcard"></div>
+        <ion-icon name="logo-css3" class="css"></ion-icon>
+        <h3>Web Design</h3>
+        <p> Designing a website with an attractive appearance<br>.</p>
+      </div>
+      <div class="card">
+        <div class="bgcard"></div>
+        <ion-icon name="logo-javascript" class="js"></ion-icon>
+        <h3>Web Applications</h3>
+        <p> Make your website more attractive and interactive!!<br> Create a simple action that will help the user.</p>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <h1 class="title">Skills</h1>
+    <div class="content">
+      <div class="skills">
+        <div class="skill">
+          <span class="htmlbar">HTML</span><br>
+          <div class="bar"></div>
+          <div class="activebar" id="bar1"></div>
         </div>
-       </div>
-       <div class="WrapHtmlText">
-          <p class="HtmlText">
-            <span><u><b>HTML</b></u></span>
-            <br>
-            <br>
-            Memahami dasar dari HTML, Pembuatan struktur sederhana, mampu memahami dasar dari sebuah tag pada HTML. Mampu memahami struktur semantik pada HTML. mampu membuat sebuah struktur dengan aturan dan makna dari tag pada HTML.
-            <span class="m6iBaerO htmlBtn">Baik!</span></p>
-       </div>
-
-       <div class="WrapCss">
-        <p>CSS&nbsp;&nbsp;&nbsp; <span class="fas fa-exclamation warn"></span></p>
-        <div class="CssBar count">
-         <span class="percentage2">0%</span>
-         </div>
+        <div class="skill">
+          <span class="cssbar">CSS</span><br>
+          <div class="bar"></div>
+          <div class="activebar" id="bar2"></div>
         </div>
-        
-        <div class="WrapCssZ">
-           <p class="CssText">
-             <span><u><b>CSS</b></u></span>
-             <br>
-             <br>
-             Memahami dasar dari properti CSS. Pemilihan Properti pada sebuah desain, pemilihan selector untuk setiap tag dan class maupun dengan class id. Mampu melakukan desain sederhana dengan menggunakan CSS dan HTML serta memahami penggunaan dan penulisan CSS pada pendesainan dengan metode Inline, Internal dan maupun dengan menggunakan metode Eksternal.
-             <span class="m6iBaerO cssBtn">Baik!</span></p>
-        </div>
-       
-       <div class="WrapJs">
-         <p>JavaScript&nbsp;&nbsp;&nbsp; <span class="fas fa-exclamation warn"></span></p>
-         <div class="JsBar count">
-           <span class="percentage3"></span>
-         </div>
-       </div>
-       <!-- Skill explaining -->
-        <div class="WrapJavaSText">
-           <p class="JSText">
-             <span><u><b>JavaScript</b></u></span>
-             <br>
-             <br>
-             Memahami dasar dari tipe data dalam JavaScript. Penggunaan variabel, array serta pengkondisian dan pemahaman dasar dengan logika pada JavaScript.
-             <span class="m6iBaerO JSBtn">Baik!</span></p>
-        </div>
-       
-       <div class="WrapWord">
-         <p>Ms Word&nbsp;&nbsp;&nbsp; <span class="fas fa-exclamation warn"></span></p>
-         <div class="WordBar count">
-          <span class="percentage4">0%</span>        
-         </div>
-       </div>
-       
-       <!-- Skill explaining -->
-        <div class="WrapMsWText">
-           <p class="WordText">
-             <span><u><b>Microsoft word</b></u></span>
-             <br>
-             <br>
-             Memahami dasar dari penggunaan Microsoft Word. Memahami penggunaan setiap Tools yang ada pada Microsoft Word. Mampu membuat surat masuk maupun surat keluar. Mengerti pembuatan dan penempatan teks serta media pada Microsoft Word.
-             <span class="m6iBaerO wordBtn">Baik!</span></p>
-        </div>
-       
-       
-       <div class="WrapExcel">
-         <p>Ms Excel&nbsp;&nbsp;&nbsp; <span class="fas fa-exclamation warn"></span></p>
-         <div class="ExcelBar count">
-           <span class="percentage5">0%</span>
-         </div>
-       </div>
-       
-       <!-- Skill explaining -->
-        <div class="WrapExcelText">
-           <p class="ExcelText">
-             <span><u><b>Microsoft Excel</b></u></span>
-             <br>
-             <br>
-             Memahami dasar penggunaan Microsoft Excel. Mampu membuat sebuah tabel, penyisipan media maupun shapes pada Microsoft Excel. Mampu memahami setiap Tools yang ada, serta mampu melakukan perhitungan menggunakan rumus yang sederhana pada Microsoft Excel.
-             <span class="m6iBaerO excelBtn">Baik!</span></p>
-        </div>
-       
-       
-       <div class="WrapPoint">
-         <p>Ms Power Point&nbsp;&nbsp;&nbsp; <span class="fas fa-exclamation warn"></span></p>
-         <div class="PowerPointBar count">
-           <span class="percentage6">0%</span>
-         </div>
-       </div>
-       
-       <!-- Skill explaining -->
-        <div class="WrapMsPText">
-           <p class="MsPText">
-             <span><u><b>Microsoft Power Point</b></u></span>
-             <br>
-             <br>
-             Mampu memahami penggunaan Microsoft Power Point, penggunaan Tools, penggunaan media dan shapes. Mampu membuat presentasi yang baik menggunakan fitur pada Tools yang telah tersedia. Memahami penggunaan pembuatan animasi pada sebuah presentasi, penggunaan keyframe serta melakukan pergerakan pada slide menggunakan animasi otomatis maupun manual.
-             <span class="m6iBaerO pointBtn">Baik!</span></p>
-        </div>
-     </article>
-   </nav>
-
-   <section>
-     <article>
-     <div class="aboutMe except"  style="position: relative;">
-       <h5><span class="borderBottom">ABOUT ME</span></h5>
-       <div class="textAboutWrap">
-        <p class="text"> 
-       Saya berusia 19 Tahun lulusan SMK jurusan Manajemen perkantoran dan
-       memiliki keahlian dalam pengelolaan sarana dan prasarana kantor. Saya
-       juga memiliki keahlian dalam bidang teknologi khususnya Web Development
-       dan Front-end Web development. Saya memiliki pengetahuan dasar dalam
-       pemrograman JavaScript. Saya memiliki inisiatif tinggi dan bersemangat
-       dalam mempelajari hal baru. Misi saya adalah menguasi dan mempelajari
-       bahasa pemrograman dalam bidang front-end dan teknologi terbaru. Visi
-       saya adalah melakukan pengembangan, serta mengembangkan sebuah project
-       dan melakukan analisa serta melakukan pemecahan masalah, Problem Solving.
-         </p>
-        </div>
-       </div>
-      </article>
-    
-    <article>
-      <div class="ProjectWrap except">
-      <h2 class="projectCation">MY PROJECT</h2>
-      <div class="horisonLine"></div>
-      <div class="myCv CVs" style="background-image:
-      url('/Gambar/CvProject.jpg');"></div>
-        <div class="cvtextWrp">
-         <p class="CVsText">Ini adalah project sederhana pertama saya dengan menggunakan HTML, css dan JAVASCRIPT. Dengan bertema Curriculum Vitae, saya membuatnya dari beberapa preferensi di internet. Project ini dibuat dengan SmartPhone menggunakan salah satu Aplikasi teks editor yaitu, TrabEdit yang dapat di temukan diPlayStore.</p>
+        <div class="skill">
+          <span class="jsbar">JavaScript</span><br>
+          <div class="bar"></div>
+          <div class="activebar" id="bar3"></div>
         </div>
       </div>
-             <div class="m6iBaero2" style="display: none; color: white;"><p>Close</p></div>
-             <img class="Projectimg imgs" src="Gambar/CvProject.jpg" alt="Project.jpg"/>
-     </article>
-      
-       <div class="CERTIFICATEWrap except">
-         <h3 class="Certify"><span class="bottomBorder">CERTIFICATE</span></h3>
-         <!--
-         <div class="horisonLine"></div>-->
-         <div class="lineCertify"></div>
-         <div class="vertikalLine"></div>
-         <!-- 
-         //box1-->
-         <div class="picture Num1" style="background-image: url('/Gambar/BRI institusi.jpg');"></div>
-         <div class="picture Num2" style="background-image: url('/Gambar/KUPU career.jpg');"></div>
-         <div class="picture Num3" style="background-image: url('/Gambar/PKL JARVIS.jpg');"></div>
-         <div class="picture Num4" style="background-image: url('/Gambar/Irwan Zuwendri Zebva.jpg');"></div>
-         <div class="wraptyp">
-           <p class="typ-verify"> Sertifikat ini diberikan kepada saya atas keikut sertaan dan sosialisasi di lingkungan sekolah maupun di luar lingkungan sekolah. Serta sertifikat PKL bahwa saya telah menyelesaikan PKL akademisi dengan PT Jarvis.</p>
-         </div>
-       </div>
-       
-       <!--
-       //box2
-       -->
-       <div class="m6iBaero" style="display: none;">Close</div>
-       
-       <img class="allShow pic1" src="Gambar/BRI institusi.jpg" alt="Certificate.jpg"/>
-       
-       <img class="allShow pic2" src="Gambar/KUPU career.jpg"
-       alt="Certificate.jpg"/>
-       
-       <img class="allShow pic3" src="Gambar/PKL JARVIS.jpg"
-       alt="Certificate.jpg"/>
-       
-       <img class="allShow pic4" src="Gambar/Irwan Zuwendri Zebva.jpg"
-       alt="Certificate.jpg"/>
-      
-       
-       
-       <article class="except Far-Z">
-         <div class="WrapJob">
-          <h2 class="experience"><span>EXPERIENCE</span></h2>
-         </div>
-         
-         <p><span class="fas fa-angle-right"> PKL PT JARVIS</span></p>
-         <ul>
-           <p style="color: #d3d2b2; display:none;" class="fas fa-tasks typin"> Assignment </p>
-           <li>Copywriting</li>
-           <li>Social Media Applications</li>
-           <li>Ads Planning and Management</li>
-           <li>Social Media Planning</li>
-         </ul>
-       </article>
-    </section>
-    
-    
-   <footer class="except">
-     <h2>CONTACT</h2>
-     <div>
-        <span class="fab fa-whatsapp class"> 0896 - 3585 - 7129 </span>
-        <a href="mailto:zwndr32@gmail.com?subject=Pesan%20Penting" class="far fa-envelope class"> zwndr32@gmail.com</a>
-        <span class="fas fa-tablet-alt class"> +6289635857129 </span>
-        <span class="fas fa-map-marker-alt class"> Provinsi Jawa Barat, Kota Depok, Kelurahan beji, Jl. Kemiri Jaya 2</span>
-     </div>
-     <p class="footer">Hak Cipta &copy; 2023 - Irwan</p>
-   
-   </footer>
-  </main>
+      <div class="para">
+        <h3>HTML, CSS, JavaScript</h3>
+        <p> Html with good structure and a basic understanding of the use of tags in HTML.<br>
+        <br> Can understand well the use of CSS. Understand in attribute selection, class or id selection.<br>
+        <br>My JavaScript Is normal.</p>
+      </div>
+    </div>
+    <h1 class="bgskill">Skills</h1>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+  </section>
+  <section id="contact">
+    <h1 class="title">Contact</h1>
+    <div class="cards">
+      <div class="card">
+        <ion-icon name="call-outline"></ion-icon>
+        <h3>Phone</h3>
+        <p>0896 - 3585 - 7129</p>
+      </div>
+      <div class="card">
+        <ion-icon name="mail-outline"></ion-icon>
+        <h3>Email</h3>
+        <p>zuwendri32@gmail.com</p>
+      </div>
+    </div>
+  </section>
+  <script src="JavaScript/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https: // unpkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js"></script>
   
-  <!-- 
-  //ASIDE|SKILL BAR//
-  // PERCENTAGE COUNT FLOOR//
-  //HTML, CSS, JS, WORD, EXCEL, POINTER//
-  -->
-  <script>
- var childElement = document.querySelector('.HtmlBar');
-var percentageElement = document.querySelector('.percentage');
-
-var childElement2 = document.querySelector('.CssBar');
-var percentageElement2 = document.querySelector('.percentage2'); 
-
-var childElement3 = document.querySelector('.JsBar'); 
-var percentageElement3 = document.querySelector('.percentage3');
-
-var childElement4 = document.querySelector('.WordBar'); 
-var percentageElement4 = document.querySelector('.percentage4');
-
-var childElement5 = document.querySelector('.ExcelBar'); 
-var percentageElement5 = document.querySelector('.percentage5');
-
-var childElement6 = document.querySelector('.PowerPointBar'); 
-var percentageElement6 = document.querySelector('.percentage6');
-
-function updatePercentage() {
-  var width = childElement.offsetWidth;
-  var parentWidth = childElement.parentNode.offsetWidth;
-  var percentage = (width / parentWidth ) * 100;
-  percentageElement.innerHTML = Math.floor(percentage) + '%';}
-  
-function updatePercentage2() {
- var width = childElement2.offsetWidth; 
- var parentWidth = childElement2.parentNode.offsetWidth;
-  var percentage = (width / parentWidth ) * 100; 
-  percentageElement2.innerHTML = Math.floor(percentage) + '%'; 
-  }
-
-function updatePercentage3() { 
- var width = childElement3.offsetWidth;
- var parentWidth = childElement3.parentNode.offsetWidth; 
- var percentage = (width / parentWidth ) * 100; 
- percentageElement3.innerHTML = Math.floor(percentage) + '%';
-  }
-
-function updatePercentage4() { 
- var width = childElement4.offsetWidth;
- var parentWidth = childElement4.parentNode.offsetWidth; 
- var percentage = (width / parentWidth ) * 100; 
- percentageElement4.innerHTML = Math.floor(percentage) + '%'; 
- }
-
-function updatePercentage5() { 
- var width = childElement5.offsetWidth;
- var parentWidth = childElement5.parentNode.offsetWidth;
-  var percentage = (width / parentWidth ) * 100; 
-  percentageElement5.innerHTML = Math.floor(percentage) + '%'; 
-  }
-  
-  function updatePercentage6() { 
- var width = childElement6.offsetWidth;
- var parentWidth = childElement6.parentNode.offsetWidth;
-  var percentage = (width / parentWidth ) * 100; 
-  percentageElement6.innerHTML = Math.floor(percentage) + '%'; 
-  }
-
-setInterval(function() {
-  updatePercentage();
-  updatePercentage2();
-  updatePercentage3();
-  updatePercentage4();
-  updatePercentage5();
-  updatePercentage6();
-}, 0.1);
-</script>
-
-<!--
-//ASIDE|SKILL EXPLAINED//
-//SKILLS
--->
-<script>
-   const select = document.querySelectorAll('.warn');
- //HTML DECLARATION//
-   const WrapHtmlText = document.querySelector('.WrapHtmlText');
-   const htmlBtn = document.querySelector('.htmlBtn');
-//CSS DECLARATION//
-   const WrapCssZ = document.querySelector('.WrapCssZ');
-   const cssBtn = document.querySelector('.cssBtn');
-//JAVASCRIPT DECLARATION//
-   const WrapJavaSText = document.querySelector('.WrapJavaSText');
-   const JSBtn = document.querySelector('.JSBtn');
-//MICROSOFT WORD DECLARATION//
-   const WrapMsWText = document.querySelector('.WrapMsWText');
-   const wordBtn = document.querySelector('.wordBtn');
-//MICROSOFT EXCEL DECLARATION//
-   const WrapExcelText = document.querySelector('.WrapExcelText');
-   const excelBtn = document.querySelector('.excelBtn');
-//MICROSOFT POWER POINT DECLARATION//
-   const WrapMsPText = document.querySelector('.WrapMsPText');
-   const pointBtn = document.querySelector('.pointBtn');
-
-select.forEach((boxBar, indeX) => {
-  boxBar.addEventListener('click', () => {
-    //1
-    if (indeX === 0) {
-      //HTML DISPLAY BLOCK//
-      WrapHtmlText.style.display = 'block';
-      htmlBtn.style.display = 'block';
-      //CSS DISPLAY NONE//
-      WrapCssZ.style.display = 'none';
-      cssBtn.style.display = 'none';
-      //JAVASCRIPT DISPLAY NONE//
-      WrapJavaSText.style.display = 'none';
-      JSBtn.style.display = 'none';
-      //Ms WORD DISPLAY NONE//
-      WrapMsWText.style.display = 'none';
-      wordBtn.style.display = 'none';
-      //Ms EXCEL DISPLAY NONE//
-      WrapExcelText.style.display = 'none';
-      excelBtn.style.display = 'none';
-      //Ms POWER POINT DISPLAY NONE//
-      WrapMsPText.style.display = 'none';
-      pointBtn.style.display = 'block'
-      // 2
-    } else if (indeX === 1) {
-        //HTML DISPLAY NONE//
-      WrapHtmlText.style.display = 'none';
-      htmlBtn.style.display = 'none';
-      //CSS DISPLAY BLOCK//
-      WrapCssZ.style.display = 'block';
-      cssBtn.style.display = 'block';
-      //JAVASCRIPT DISPLAY NONE//
-      WrapJavaSText.style.display = 'none';
-      JSBtn.style.display = 'none';
-      //Ms WORD DISPLAY NONE//
-      WrapMsWText.style.display = 'none';
-      wordBtn.style.display = 'none';
-      //Ms EXCEL DISPLAY NONE//
-      WrapExcelText.style.display = 'none';
-      excelBtn.style.display = 'none';
-      //Ms POWER POINT DISPLAY NONE//
-      WrapMsPText.style.display = 'none';
-      pointBtn.style.display = 'block'
-      //3
-    }else if (indeX === 2) {
-       //HTML DISPLAY NONE//
-      WrapHtmlText.style.display = 'none';
-      htmlBtn.style.display = 'none';
-      //CSS DISPLAY NONE//
-      WrapCssZ.style.display = 'none';
-      cssBtn.style.display = 'none';
-      //JAVASCRIPT DISPLAY BLOCK//
-      WrapJavaSText.style.display = 'block';
-      JSBtn.style.display = 'block';
-      //Ms WORD DISPLAY NONE//
-      WrapMsWText.style.display = 'none';
-      wordBtn.style.display = 'none';
-      //Ms EXCEL DISPLAY NONE//
-      WrapExcelText.style.display = 'none';
-      excelBtn.style.display = 'none';
-      //Ms POWER POINT DISPLAY NONE//
-      WrapMsPText.style.display = 'none';
-      pointBtn.style.display = 'block'
-      //4
-    }else if (indeX === 3) {
-     //HTML DISPLAY NONE//
-      WrapHtmlText.style.display = 'none';
-      htmlBtn.style.display = 'none';
-      //CSS DISPLAY NONE//
-      WrapCssZ.style.display = 'none';
-      cssBtn.style.display = 'none';
-      //JAVASCRIPT DISPLAY NONE//
-      WrapJavaSText.style.display = 'none';
-      JSBtn.style.display = 'none';
-      //Ms WORD DISPLAY BLOCK//
-      WrapMsWText.style.display = 'block';
-      wordBtn.style.display = 'block';
-      //Ms EXCEL DISPLAY NONE//
-      WrapExcelText.style.display = 'none';
-      excelBtn.style.display = 'none';
-      //Ms POWER POINT DISPLAY NONE//
-      WrapMsPText.style.display = 'none';
-      pointBtn.style.display = 'none'
-    }else if (indeX === 4) {
-      //HTML DISPLAY NONE//
-      WrapHtmlText.style.display = 'none';
-      htmlBtn.style.display = 'none';
-      //CSS DISPLAY NONE//
-      WrapCssZ.style.display = 'none';
-      cssBtn.style.display = 'none';
-      //JAVASCRIPT DISPLAY NONE//
-      WrapJavaSText.style.display = 'none';
-      JSBtn.style.display = 'none';
-      //Ms WORD DISPLAY NONE//
-      WrapMsWText.style.display = 'none';
-      wordBtn.style.display = 'none';
-      //Ms EXCEL DISPLAY BLOCK//
-      WrapExcelText.style.display = 'block';
-      excelBtn.style.display = 'block';
-      //Ms POWER POINT DISPLAY NONE//
-      WrapMsPText.style.display = 'none';
-      pointBtn.style.display = 'none'
-    }else if (indeX === 5) {
-       //HTML DISPLAY NONE//
-      WrapHtmlText.style.display = 'none';
-      htmlBtn.style.display = 'none';
-      //CSS DISPLAY NONE//
-      WrapCssZ.style.display = 'none';
-      cssBtn.style.display = 'none';
-      //JAVASCRIPT DISPLAY NONE//
-      WrapJavaSText.style.display = 'none';
-      JSBtn.style.display = 'none';
-      //Ms WORD DISPLAY NONE//
-      WrapMsWText.style.display = 'none';
-      wordBtn.style.display = 'none';
-      //Ms EXCEL DISPLAY NONE//
-      WrapExcelText.style.display = 'none';
-      excelBtn.style.display = 'none';
-      //Ms POWER POINT DISPLAY BLOCK//
-      WrapMsPText.style.display = 'block';
-      pointBtn.style.display = 'block'
-    }
-  });
-});
-
-htmlBtn.addEventListener('click', () => {
-  WrapHtmlText.style.display = 'none';
-  htmlBtn.style.display = 'none'
-});
-
-cssBtn.addEventListener('click', () => {
-  WrapCssZ.style.display = 'none';
-  cssBtn.style.display = 'none'
-});
-
-JSBtn.addEventListener('click', () => {
-  WrapJavaSText.style.display = 'none';
-  JSBtn.style.display = 'none'
-});
-
-wordBtn.addEventListener('click', () => {
-  WrapMsWText.style.display = 'none';
-  wordBtn.style.display = 'none'
-});
-
-excelBtn.addEventListener('click', () => {
-  WrapExcelText.style.display = 'none';
-  excelBtn.style.display = 'none'
-});
-
-pointBtn.addEventListener('click', () =>{
-  WrapMsPText.style.display = 'none';
-  pointBtn.style.display = 'none'
-});
-  </script>
-  
-<!--
-  //SECTION|ARTICLE//
-  //script typing textAboutMe 
-  //Text about me
--->
-     <script>
- const startTyping = () => {
-  const text = document.querySelector('.text');
-  const sentences = text.innerHTML.split('$');
-  text.innerHTML = '';
-
-  sentences.forEach((sentence, index) => {
-    const sentenceSpan = document.createElement('Span');
-    text.appendChild(sentenceSpan);
-
-    [...sentence].forEach((letter, letterIndex) => {
-      setTimeout(() => {
-        sentenceSpan.textContent += letter;
-        if (index === sentences.length - 1 && letterIndex === sentence.length - 1) {
-          text.classList.add('done');
-        }
-      }, 13 * letterIndex);
-    });
-  });
-};
-
-setTimeout(startTyping, 2500);
-     </script>
-     
-  <!--
-  //SECTION|ARTICLE//
-  //Teks typing Project script
-  -->
-       <script>
- const startTyping2 = () => {
-  const text2 = document.querySelector('.CVsText');
-  const sentences2 = text2.innerHTML.split('$');
-  text2.innerHTML = '';
-
-  sentences2.forEach((sentence, index) => {
-    const sentenceSpan2 = document.createElement('Span');
-    text2.appendChild(sentenceSpan2);
-
-    [...sentence].forEach((letter, letterIndex) => {
-      setTimeout(() => {
-        sentenceSpan2.textContent += letter;
-        if (index === sentences2.length - 1 && letterIndex === sentence.length - 1) {
-          text2.classList.add('done');
-        }
-      }, 13 * letterIndex);
-    });
-  });
-};
-
-setTimeout(startTyping2, 3000);
-     </script>
-     
-     <!-- 
-    //SECTION|ARTICLE//
-    //PROJECT content
-    //Img script
-    -->
-<script>
-const box2 = document.querySelector('.CVs');
-const picZ = document.querySelector('.Projectimg');
-const closeBtnN = document.querySelector('.m6iBaero2');
-const blurringN =  document.querySelectorAll('.except');
-
-box2.addEventListener('click', () => {
-  picZ.style.display = 'block';
-  closeBtnN.style.display = 'block';
-  blurringN.forEach(elem => {
-    elem.style.filter = 'blur(0.50vmax)';
-  });
-});
-
-closeBtnN.addEventListener('click', () => {
-  picZ.style.display = 'none';
-  closeBtnN.style.display = 'none';
-  blurringN.forEach(elem => {
-  elem.style.filter = 'none';
-  });
-});
-  </script>
-   
-     
-<!-- 
-//Section//
-//CERTIFICATE
-//Img script
--->
-  <script>
-       const box1 = document.querySelectorAll('.picture');
-const pic1 = document.querySelector('.pic1');
-const pic2 = document.querySelector('.pic2');
-const pic3 = document.querySelector('.pic3');
-const pic4 = document.querySelector('.pic4');
-const closeBtn = document.querySelector('.m6iBaero');
-const blurring =  document.querySelectorAll('.except');
-
-// loop through each box1 element and add click listener
-box1.forEach((box, index) => {
-  box.addEventListener('click', () => {
-    // show the corresponding image and hide the others
-    if (index === 0) {
-      pic1.style.display = 'block';
-      pic2.style.display = 'none';
-      pic3.style.display = 'none';
-      pic4.style.display = 'none';
-    } else if (index === 1) {
-      pic1.style.display = 'none';
-      pic2.style.display = 'block';
-      pic3.style.display = 'none';
-      pic4.style.display = 'none';
-    }else if (index === 2) {
-      pic1.style.display = 'none';
-      pic2.style.display = 'none';
-      pic3.style.display = 'block';
-      pic4.style.display = 'none';
-    }else if (index === 3) {
-      pic1.style.display = 'none';
-      pic2.style.display = 'none';
-      pic3.style.display = 'none';
-      pic4.style.display = 'block';
-    }
-    closeBtn.style.display = 'block';
-    blurring.forEach(elem => {
-      elem.style.filter = 'blur(0.50vmax)';
-    });
-  });
-});
-
-closeBtn.addEventListener('click', () => {
-  pic1.style.display = 'none';
-  pic2.style.display = 'none';
-  pic3.style.display = 'none';
-  pic4.style.display = 'none';
-  closeBtn.style.display = 'none';
-  blurring.forEach(elem => {
-    elem.style.filter = 'none';
-  });
-});
-
-  </script>
-  
-  <!--
-  //SECTION|ARTICLE//
-  //script typing Assignment|PKL EXPERIENCE//
-  //EXPERIENCE
--->
-     <script>
-     const startTypingN = () => {
-  const textZ = document.querySelector('.typin');
-  const sentences = textZ.innerHTML.split('$');
-  textZ.innerHTML = '';
-  let delay = 0;
-
-  sentences.forEach((sentence, index) => {
-    const sentenceSpan = document.createElement('span');
-    textZ.appendChild(sentenceSpan);
-
-    [...sentence].forEach((letter, letterIndex) => {
-      setTimeout(() => {
-        sentenceSpan.textContent += letter;
-        if (index === sentences.length - 1 && letterIndex === sentence.length - 1) {
-          textZ.classList.add('done');
-        }
-      }, 120 * letterIndex + delay);
-    });
-    textZ.style.display = 'block';
-    delay += 120 *sentence.length;
-  });
-};
-
-document.addEventListener('DOMContentLoaded', () => {
-  setTimeout(() => {
-    startTypingN();
-  }, 3000);
-});
-
-
-
-
-
-     
-     
-     /*
- const startTypingN = () => {
-  const textZ = document.querySelector('.typin');
-  const sentences = textZ.innerHTML.split('$');
-  textZ.innerHTML = '';
-
-  sentences.forEach((sentence, index) => {
-    const sentenceSpan = document.createElement('Span');
-    textZ.appendChild(sentenceSpan);
-
-    [...sentence].forEach((letter, letterIndex) => {
-      setTimeout(() => {
-        sentenceSpan.textContent += letter;
-        if (index === sentences.length - 1 && letterIndex === sentence.length - 1) {
-          textZ.classList.add('done');
-        }
-      }, 120 * letterIndex);
-    });
-  });
-};
-
-setTimeout(startTypingN, 2500);*/
-     </script>
-  
-   
-
 </body>
- </html>
-  
+
+</html>
