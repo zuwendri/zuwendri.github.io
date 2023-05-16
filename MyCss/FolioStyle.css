@@ -152,7 +152,7 @@ header ul li a:hover {
   position: absolute;
   transform: rotate(-90deg) translateY(300px) translateX(-250px);
   z-index: -2;
-  right: 0;
+  right: calc(0px + 17px);
   font-size: 150px;
   color: #1f67db;
   opacity: 0.3
@@ -174,12 +174,12 @@ header ul li a:hover {
   width: 200px;
   border: solid 5vmax #1f67db;
   border-radius: 50%;
-  opacity: 0.3;
+  opacity: 0;
   transform: rotate(0deg);
   bottom: 250px;
   left: 80px;
-  animation: solid2dotted 2s ease-out alternate-reverse infinite;
-  animation-delay: 2s;
+  animation: solid2dotted 2s ease-out  infinite, opacities 2s ease-in infinite alternate;
+  animation-delay: 2s, 1.8s;
 }
 
 .circle2 {
@@ -188,9 +188,10 @@ header ul li a:hover {
   width: 200px;
   border: dashed 30px #1f67db;
   border-radius: 50%;
+  box-shadow: 2px 4px 40px 20px cyan;
   transform: translate(300px, 20px) rotate(0deg);
   opacity: 0.3;
-  animation: rotated 2.5s ease-in forwards infinite;
+  animation: rotated 2.5s forwards infinite alternate;
 }
 
 .circle3 {
@@ -205,10 +206,10 @@ header ul li a:hover {
 }
 
 #services {
-  width: 100%;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 100px;
+  padding: 100px 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
