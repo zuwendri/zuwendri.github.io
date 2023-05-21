@@ -111,11 +111,12 @@ header ul li a:hover {
   font-size: 30px;
 }
 
-.left h3 {
+.left h3{
   font-size: 50px;
   color: #1f67db;
   letter-spacing: 1px;
 }
+
 
 .left .des {
   font-size: 25px;
@@ -140,7 +141,7 @@ header ul li a:hover {
 }
 
 .left button:hover {
-  transform: scale(1.09);
+  transform: scale(0.09);
   background-color: #c7adab;
 }
 
@@ -204,7 +205,10 @@ header ul li a:hover {
   top: 150px;
   left: 80px;
 }
-
+.names {
+  background-color: rgba(50, 150, 200, 0.2);
+  border-radius: 5px;
+}
 #services {
   width: 100vw;
   margin-left: auto;

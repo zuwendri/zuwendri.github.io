@@ -6,13 +6,13 @@ menubtn.onclick = function() {
   if (!menu.classList.contains('open')) {
     menu.classList.add('open')
     menubtn.style.transform = 'rotate(180deg)'
-    menubtn.classList.remove('uil-bars')
-    menubtn.classList.add('uil-times')
+    menubtn.classList.remove('fa-bars')
+    menubtn.classList.add('fa-times')
   } else {
     menu.classList.remove('open')
     menubtn.style.transform = 'rotate(0deg)'
-    menubtn.classList.add('uil-bars')
-    menubtn.classList.remove('uil-times')
+    menubtn.classList.add('fa-bars')
+    menubtn.classList.remove('fa-times')
   }
 }
 
@@ -45,26 +45,26 @@ nav4 = document.getElementById('nav4')
 nav1.onclick = function() {
   menu.classList.remove('open')
   menubtn.style.transform = 'rotate(0deg)'
-  menubtn.classList.add('uil-bars')
-  menubtn.classList.remove('uil-times')
+  menubtn.classList.add('fa-bars')
+  menubtn.classList.remove('fa-times')
 }
 nav2.onclick = function() {
   menu.classList.remove('open')
   menubtn.style.transform = 'rotate(0deg)'
-  menubtn.classList.add('uil-bars')
-  menubtn.classList.remove('uil-times')
+  menubtn.classList.add('fa-bars')
+  menubtn.classList.remove('fa-times')
 }
 nav3.onclick = function() {
   menu.classList.remove('open')
   menubtn.style.transform = 'rotate(0deg)'
-  menubtn.classList.add('uil-bars')
-  menubtn.classList.remove('uil-times')
+  menubtn.classList.add('fa-bars')
+  menubtn.classList.remove('fa-times')
 }
 nav4.onclick = function() {
   menu.classList.remove('open')
   menubtn.style.transform = 'rotate(0deg)'
-  menubtn.classList.add('uil-bars')
-  menubtn.classList.remove('uil-times')
+  menubtn.classList.add('fa-bars')
+  menubtn.classList.remove('fa-times')
 }
 
 
@@ -90,8 +90,8 @@ sw.addEventListener('click', () => {
     document.body.classList.add('dark')
     menu.classList.remove('open')
     menubtn.style.transform = 'rotate(0deg)'
-    menubtn.classList.add('uil-bars')
-    menubtn.classList.remove('uil-times')
+    menubtn.classList.add('fa-bars')
+    menubtn.classList.remove('fa-times')
     sw.style.backgroundColor = '#1F2021'
   } else {
     swcircle.classList.remove('on')
@@ -99,8 +99,8 @@ sw.addEventListener('click', () => {
     document.body.classList.remove('dark')
     menu.classList.remove('open')
     menubtn.style.transform = 'rotate(0deg)'
-    menubtn.classList.add('uil-bars')
-    menubtn.classList.remove('uil-times')
+    menubtn.classList.add('fa-bars')
+    menubtn.classList.remove('fa-times')
     sw.style.backgroundColor = '#fff'
   }
 })
