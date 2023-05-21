@@ -117,7 +117,6 @@ header ul li a:hover {
   letter-spacing: 1px;
 }
 
-
 .left .des {
   font-size: 25px;
 }
@@ -165,7 +164,7 @@ header ul li a:hover {
   right: 60px;
   top: 200px;
   color: #1f67db;
-  opacity: .3;
+  opacity: .2;
   z-index: -10;
 }
 
@@ -646,7 +645,7 @@ header ul li a:hover {
   .htmls {
     left: 0;
     transform: translateY(300px);
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .circle1 {
