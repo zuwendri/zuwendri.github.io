@@ -1,6 +1,6 @@
  @keyframes rotated {
   0% { transform: rotate(0deg);
-       box-shadow: 2px 4px 0px 0px cyan;
+       box-shadow: 2px 4px 40px 0px yellow;
   }
   100% { transform: rotate(360deg);
          box-shadow: 2px 4px 40px 20px cyan;
