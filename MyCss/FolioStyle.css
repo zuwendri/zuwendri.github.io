@@ -116,7 +116,9 @@ header ul li a:hover {
   color: #1f67db;
   letter-spacing: 1px;
 }
-
+#riten {
+  border-bottom: 1px solid #1f67db;
+}
 .left .des {
   font-size: 25px;
 }

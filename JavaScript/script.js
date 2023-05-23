@@ -104,3 +104,15 @@ sw.addEventListener('click', () => {
     sw.style.backgroundColor = '#fff'
   }
 })
+
+ new Typed('#riten',{
+  strings : ['Developer','Design'],
+  typeSpeed : 50,
+  backDelay: 2000,
+  backSpeed: 50,
+  showCursor: false,
+  shuffle: false,
+  loop : true
+});
+
+
