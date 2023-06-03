@@ -116,3 +116,41 @@ sw.addEventListener('click', () => {
 });
 
 
+
+//EMAIL
+document.getElementById('emailForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('nameInput').value;
+  const email = document.getElementById('emailInput').value;
+  const message = document.getElementById('messageInput').value;
+
+  const formData = {
+    name: name,
+    email: email,
+    message: message
+  };
+
+  // Send Data side Backend
+  fetch('/send-email', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      alert('Email sent successfully!');
+      // Empty email after sendding
+      document.getElementById('emailForm').reset();
+    } else {
+      alert('Failed to send email. Please try again later.');
+    }
+  })
+  .catch(error => {
+    console.error('Error sending email:', error);
+    alert('An error occurred. Please try again later.');
+  });
+});
