@@ -25,8 +25,8 @@ window.addEventListener('scroll', () => {
   if (menu.classList.contains('open')) {
     menu.classList.remove('open')
     menubtn.style.transform = 'rotate(0deg)'
-    menubtn.classList.add('uil-bars')
-    menubtn.classList.remove('uil-times')
+    menubtn.classList.add('fa-bars')
+    menubtn.classList.remove('fa-times')
   }
 })
 
@@ -105,14 +105,14 @@ sw.addEventListener('click', () => {
   }
 })
 
- new Typed('#riten',{
-  strings : ['Developer','Design'],
-  typeSpeed : 50,
+new Typed('#riten', {
+  strings: ['Developer', 'Design'],
+  typeSpeed: 50,
   backDelay: 2000,
   backSpeed: 50,
   showCursor: false,
   shuffle: false,
-  loop : true
+  loop: true
 });
 
 
@@ -133,24 +133,24 @@ document.getElementById('emailForm').addEventListener('submit', function(e) {
 
   // Send Data side Backend
   fetch('/send-email', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(formData)
-  })
-  .then(response => response.json())
-  .then(data => {
-    if (data.success) {
-      alert('Email sent successfully!');
-      // Empty email after sendding
-      document.getElementById('emailForm').reset();
-    } else {
-      alert('Failed to send email. Please try again later.');
-    }
-  })
-  .catch(error => {
-    console.error('Error sending email:', error);
-    alert('An error occurred. Please try again later.');
-  });
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        alert('Email sent successfully!');
+        // Empty email after sendding
+        document.getElementById('emailForm').reset();
+      } else {
+        alert('Failed to send email. Please try again later.');
+      }
+    })
+    .catch(error => {
+      console.error('Error sending email:', error);
+      alert('An error occurred. Please try again later.');
+    });
 });

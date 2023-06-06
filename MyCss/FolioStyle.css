@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
   scroll-behavior: smooth;
+  animation: ease .5s;
 }
 
 body {
