@@ -1,9 +1,9 @@
  @keyframes rotated {
   0% { transform: rotate(0deg);
-       box-shadow: 2px 4px 40px 0px yellow;
+       box-shadow: 2px 4px 40px 0px cyan;
   }
   100% { transform: rotate(360deg);
-         box-shadow: 2px 4px 40px 20px cyan;
+         box-shadow: none;
   } 
 }
 @keyframes solid2dotted {
